@@ -10,7 +10,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                <h1>PowerBound</h1>
+                <h1><span style="color: red;">Power</span><span style="color: black;">Bound</span></h1>
             </div>
             <nav>
                 <ul>
@@ -37,8 +37,20 @@
     <section id="about" class="fade-in">
         <div class="container">
             <h2 class="section-title">About <span>Us</span></h2>
-            <p class="section-description">Our experienced team of counselors and personal coaches is here to guide you on your journey to self-improvement. We offer one-on-one sessions tailored to your unique needs.</p>
-            <img src="https://via.placeholder.com/600x300" alt="About Us" class="section-image">
+            <div class="about-content">
+                <div class="about-box">
+                    <h3>Who We Are</h3>
+                    <p>We are a dedicated team of counselors and personal coaches committed to guiding you on your journey to self-improvement.</p>
+                </div>
+                <div class="about-box">
+                    <h3>Our Mission</h3>
+                    <p>Our mission is to empower individuals to reach their full potential through personalized coaching and support.</p>
+                </div>
+                <div class="about-box">
+                    <h3>Our Approach</h3>
+                    <p>We offer tailored sessions designed to meet your unique needs, ensuring a personalized experience.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -47,22 +59,16 @@
             <h2 class="section-title">Our <span>Services</span></h2>
             <div class="service-grid">
                 <div class="service-item">
-                    <i class="service-icon career-icon"></i>
                     <h3>Career Growth</h3>
                     <p>Achieve your career aspirations with expert coaching and guidance.</p>
-                    <img src="https://via.placeholder.com/150" alt="Career Growth" class="service-image">
                 </div>
                 <div class="service-item">
-                    <i class="service-icon mental-icon"></i>
                     <h3>Mental Wellness</h3>
                     <p>Discover tools and strategies to improve your mental and emotional health.</p>
-                    <img src="https://via.placeholder.com/150" alt="Mental Wellness" class="service-image">
                 </div>
                 <div class="service-item">
-                    <i class="service-icon personal-icon"></i>
                     <h3>Personal Development</h3>
                     <p>Unlock your true potential with personalized self-improvement plans.</p>
-                    <img src="https://via.placeholder.com/150" alt="Personal Development" class="service-image">
                 </div>
             </div>
         </div>
@@ -87,7 +93,7 @@
     <section id="contact" class="fade-in">
         <div class="container">
             <h2 class="section-title">Get In <span>Touch</span></h2>
-            <form action="./form.php" method="post" id="contact-form">
+            <form action="https://formspree.io/YOUR_EMAIL" method="POST" id="contact-form">
                 <input type="text" name="name" placeholder="Your Name" required>
                 <input type="email" name="email" placeholder="Your Email" required>
                 <textarea name="message" placeholder="Your Message" required></textarea>
@@ -99,17 +105,19 @@
     <section id="book" class="fade-in">
         <div class="container">
             <h2 class="section-title">Book a <span>Session</span></h2>
-            <form action="process_form.php" method="post" id="booking-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <input type="date" name="date" required>
-                <select name="session-type">
-                    <option value="career">Career Growth</option>
-                    <option value="mental">Mental Wellness</option>
-                    <option value="personal">Personal Development</option>
-                </select>
-                <button type="submit" class="btn animated-btn">Book Now</button>
-            </form>
+            <div class="booking-form">
+                <form action="https://formspree.io/YOUR_EMAIL" method="POST" id="booking-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="date" name="date" required>
+                    <select name="session-type">
+                        <option value="career">Career Growth</option>
+                        <option value="mental">Mental Wellness</option>
+                        <option value="personal">Personal Development</option>
+                    </select>
+                    <button type="submit" class="btn animated-btn">Book Now</button>
+                </form>
+            </div>
         </div>
     </section>
 
