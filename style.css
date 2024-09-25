@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #fff; /* White text */
+}
+
+header {
+    background: linear-gradient(45deg, #c0392b, #8e44ad); /* Red to purple gradient */
+    color: white;
+    padding: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo h1 {
+    font-size: 2rem; /* Adjusted logo size */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #f39c12; /* Gold on hover */
+}
+
+#hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1920x800') no-repeat center center/cover;
+    position: relative;
+}
+
+.colorful-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(192, 57, 43, 0.5); /* Red overlay */
+    mix-blend-mode: multiply;
+}
+
+.typewriter {
+    font-size: 3.5rem;
+    color: #fff;
+    animation: typing 3s steps(30, end), blink 0.7s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f39c12; /* Gold */
+    position: relative;
+}
+
+.section-title span {
+    color: #c0392b; /* Red */
+}
+
+.section-title::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #c0392b; /* Red */
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-description {
+    font-size: 1.2rem;
+    color: #ddd; /* Light grey text */
+    margin-bottom: 30px;
+}
+
+.section-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.service-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background: #1a1a1a;
+    border: 1px solid #c0392b; /* Red border */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    width: 300px; /* Fixed width for service items */
+    transition: transform 0.3s;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    font-size: 2rem;
+    color: #f39c12; /* Gold for icons */
+}
+
+.testimonial-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.testimonial {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+    scroll-snap-align: start;
+    transition: transform 0.3s;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #555; /* Dark grey for text */
+}
+
+.testimonial h4 {
+    margin-top: 15px;
+    color: #c0392b; /* Red for author */
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #f39c12; /* Gold */
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c0392b; /* Red border */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background: #222; /* Darker input background */
+    color: white; /* White text */
+}
+
+input:focus, textarea:focus {
+    border-color: #f39c12; /* Gold border on focus */
+    outline: none;
+}
+
+.btn {
+    background: #c0392b; /* Red background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: linear-gradient(45deg, #e74c3c, #c0392b); /* Hover effect */
+    transform: scale(1.1);
+}
+
+.animated-btn {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+

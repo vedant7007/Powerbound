@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerBound - Self-Improvement Consultancy</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>PowerBound</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#book" class="cta">Book Session</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1 class="typewriter">Transform Your Life</h1>
+            <p>Start your journey to personal growth and self-improvement today. We are here to help.</p>
+            <a href="#book" class="btn animated-btn">Get Started</a>
+        </div>
+        <div class="colorful-overlay"></div>
+    </section>
+
+    <section id="about" class="fade-in">
+        <div class="container">
+            <h2 class="section-title">About <span>Us</span></h2>
+            <p class="section-description">Our experienced team of counselors and personal coaches is here to guide you on your journey to self-improvement. We offer one-on-one sessions tailored to your unique needs.</p>
+            <img src="https://via.placeholder.com/600x300" alt="About Us" class="section-image">
+        </div>
+    </section>
+
+    <section id="services" class="fade-in">
+        <div class="container">
+            <h2 class="section-title">Our <span>Services</span></h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <i class="service-icon career-icon"></i>
+                    <h3>Career Growth</h3>
+                    <p>Achieve your career aspirations with expert coaching and guidance.</p>
+                    <img src="https://via.placeholder.com/150" alt="Career Growth" class="service-image">
+                </div>
+                <div class="service-item">
+                    <i class="service-icon mental-icon"></i>
+                    <h3>Mental Wellness</h3>
+                    <p>Discover tools and strategies to improve your mental and emotional health.</p>
+                    <img src="https://via.placeholder.com/150" alt="Mental Wellness" class="service-image">
+                </div>
+                <div class="service-item">
+                    <i class="service-icon personal-icon"></i>
+                    <h3>Personal Development</h3>
+                    <p>Unlock your true potential with personalized self-improvement plans.</p>
+                    <img src="https://via.placeholder.com/150" alt="Personal Development" class="service-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="fade-in">
+        <div class="container">
+            <h2 class="section-title">What Our <span>Clients</span> Say</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial">
+                    <p>"This service has transformed my life. The team helped me find clarity and purpose in my career."</p>
+                    <h4>- Jane Doe</h4>
+                </div>
+                <div class="testimonial">
+                    <p>"My mental wellness has improved dramatically since I started these sessions. Highly recommend."</p>
+                    <h4>- John Smith</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+        <div class="container">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <form action="./form.php" method="post" id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn animated-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="book" class="fade-in">
+        <div class="container">
+            <h2 class="section-title">Book a <span>Session</span></h2>
+            <form action="process_form.php" method="post" id="booking-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="date" name="date" required>
+                <select name="session-type">
+                    <option value="career">Career Growth</option>
+                    <option value="mental">Mental Wellness</option>
+                    <option value="personal">Personal Development</option>
+                </select>
+                <button type="submit" class="btn animated-btn">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h2>PowerBound</h2>
+            <p>© 2024 PowerBound | All Rights Reserved</p>
+            <div class="footer-links">
+                <a href="#contact">Contact Us</a>
+                <a href="#services">Our Services</a>
+                <a href="#about">About Us</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
